@@ -45,29 +45,11 @@ window.addEventListener("keydown", (e) => {
     hithatSound.play();
   }
 });
-const hitHatDrum = document
-  .getElementById("hit-hat-sound")
-  .addEventListener("mousedown", () => {
-    const hithatSound = new Audio("/sounds/hihat.wav");
-    hithatSound.play();
-  });
+
+//------------------------------------------------------------
 
 window.addEventListener("keydown", (e) => {
-  if (e.key == "ö" || e.key == "Ö") {
-    const openhatSound = new Audio("/sounds/openhat.wav");
-    openhatSound.play();
-  }
-});
-
-const openHatDrum = document
-  .getElementById("open-hat-sound")
-  .addEventListener("mousedown", () => {
-    const openhatSound = new Audio("/sounds/openhat.wav");
-    openhatSound.play();
-  });
-
-window.addEventListener("keydown", (e) => {
-  if (e.key == "j" || e.key == "J") {
+  if (e.key == "l" || e.key == "L") {
     const snareSound = new Audio("/sounds/snare.wav");
     snareSound.play();
   }
@@ -81,6 +63,41 @@ const snareDrum = document
 
 window.addEventListener("keydown", (e) => {
   if (e.key == "k" || e.key == "K") {
+    const rideSound = new Audio("/sounds/ride.wav");
+    rideSound.play();
+  }
+});
+
+const rideDrum = document
+  .getElementById("ride-sound")
+  .addEventListener("mousedown", () => {
+    const rideSound = new Audio("/sounds/ride.wav");
+    rideSound.play();
+  });
+
+const hitHatDrum = document
+  .getElementById("hit-hat-sound")
+  .addEventListener("mousedown", () => {
+    const hithatSound = new Audio("/sounds/hihat.wav");
+    hithatSound.play();
+  });
+
+window.addEventListener("keydown", (e) => {
+  if (e.key == "j" || e.key == "J") {
+    const openhatSound = new Audio("/sounds/openhat.wav");
+    openhatSound.play();
+  }
+});
+
+const openHatDrum = document
+  .getElementById("open-hat-sound")
+  .addEventListener("mousedown", () => {
+    const openhatSound = new Audio("/sounds/openhat.wav");
+    openhatSound.play();
+  });
+
+window.addEventListener("keydown", (e) => {
+  if (e.key == "ö" || e.key == "Ö") {
     const thinkSound = new Audio("/sounds/tink.wav");
     thinkSound.play();
   }
@@ -93,7 +110,7 @@ const thinkDrum = document
   });
 
 window.addEventListener("keydown", (e) => {
-  if (e.key == "l" || e.key == "L") {
+  if (e.key == "" || e.key == " ") {
     const tomSound = new Audio("/sounds/tom.wav");
     tomSound.play();
   }
